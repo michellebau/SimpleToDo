@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:background="#FFF">
+
+    <EditText
+        android:id="@+id/updItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:ems="10"
+        android:hint="Update task" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updItem"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/priView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority?"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45pt"/>
+
+    <Button
+        android:id="@+id/btnHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:text="High"/>
+
+    <Button
+        android:id="@+id/btnMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:text="Medium" />
+
+    <Button
+        android:id="@+id/btnLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="Low" />
+
+
+</RelativeLayout>
